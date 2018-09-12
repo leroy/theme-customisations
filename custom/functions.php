@@ -15,3 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * functions.php
  * Add PHP snippets here
  */
+
+remove_action( 'woocommerce_proceed_to_checkout', 'action_woocommerce_proceed_to_checkout', 10, 2 ); 
+
