@@ -15,6 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * functions.php
  * Add PHP snippets here
  */
+add_action( 'wp_enqueue_scripts', function () {
+    wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
+});
 
-remove_action( 'woocommerce_proceed_to_checkout', 'action_woocommerce_proceed_to_checkout', 10, 2 ); 
+remove_action( 'woocommerce_proceed_to_checkout', 'action_woocommerce_proceed_to_checkout', 10, 2 );
 
