@@ -28,8 +28,3 @@ add_action( 'wp_enqueue_scripts', function () {
  */
 add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
-/**
- * Remove checkout button
- */
-remove_action( 'woocommerce_proceed_to_checkout', 'action_woocommerce_proceed_to_checkout', 10, 2 );
-
