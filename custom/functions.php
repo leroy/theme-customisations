@@ -28,3 +28,13 @@ add_action( 'wp_enqueue_scripts', function () {
  */
 add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
+/**
+ * Additional 'proceed to checkout' button before cart
+ */
+add_action('woocommerce_before_cart', function() {
+?>
+<div class="wc-proceed-to-checkout">
+<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
+</div>
+<?php
+});
